@@ -1,0 +1,8 @@
+.ap_work_experiences_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.ap_work_experiences_container input {
+    width: 100%;
+}
