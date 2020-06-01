@@ -1,8 +1,8 @@
 <?php
 
 /*
-Plugin Name: Experiências de Trabalho
-Description: Um plugin simples para gerar e listar suas experiências profissionais no portifóleo
+Plugin Name: Work Experiences
+Description: Um plugin simples para gerar e listar seus conhecimentos profissionais no portifóleo
 Version: 1.0
 Author: Alex Sousa
 Author URI: https://mi7dev.com.br
@@ -10,7 +10,7 @@ Text Domain: work_experiences
 */
 
 if (!function_exists('add_action')) {
-    echo __('Por enquanto só um plugin sem sentido', 'experiencia de trabalho');
+    echo __('Este é um plugin Worpress e não tem sentido ser chamado por fora!', 'work_experiences');
     exit;
 }
 
@@ -26,6 +26,6 @@ include('includes/admin/admin_init.php');
 register_activation_hook(WORK_EXPERIENCES_PLUGIN_URL, 'ap_work_experiences_activate_plugin');
 add_action('init', 'ap_work_experiences_init');
 add_action('admin_init', 'ap_work_experiences_admin_init');
-add_action('save_post', 'ap_work_experiences_save_post_admin', 10, 3);
+add_action('save_post_work_experiences', 'ap_work_experiences_save_post_admin', 10, 3);
 
 // Shortcodes
